@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA6-Compatible" content="ie=edge">
+    <title>Google.com</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./google.css">
+</head>
+<body>
+    <div class="header1">
+        <ul>
+            <li><div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">About </a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+                <script>
+                    /* When the user clicks on the button, toggle between hiding and showing the dropdwon content */
+
+                    function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+
+                    // close the dropdown if the user clicks outside of it
+                    
+                    window.onclick = function(event) 
+                    {
+                        if(!event.target.matches('.dropbtn'))
+                        {
+                            var dropdowns = documnet.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++)
+                            {
+                                var openDropdown = dropdowns[i];
+                                if(openDropdown.classList.contains('show'))
+                                {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </li>
+            <li>Images</li>
+            <li>Gmail</li>
+        </ul>
+    </div>
+    <div class="center-wrapper">
+        <div class="centered-content">
+            <div id="logo">Google</div>
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+            <div>
+                <ul>
+                    <li class="words" style="color: black">Google offered in:</li>
+                    <li class="lang">Luganda</li>
+                    <li class="lang">Kiswahili</li>
+                    <li class="lang">Ikinyarwanda</li>
+                    <li class="lang">Luo</li>
+                    <li class="lang">Runyakitara</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+        <ul>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+</body>
+</html>

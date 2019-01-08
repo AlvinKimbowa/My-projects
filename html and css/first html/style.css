@@ -1,0 +1,43 @@
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+#logo {
+	float: left;
+	width: 200px;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 13px;
+	color: black;
+}
+
+header {
+	background: lightblue;
+	overflow: hidden;
+}
+
+.main-header {
+	width: 60%;
+	float: left;
+}
+
+.main-header ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 10px;
+}
+
+.main-header ul li:hover {
+	color: whitesmoke;
+	background: lightblue;
+	padding: 1px;
+}
+
+.first {
+	padding: 10px;
+	margin: 10px;
+}
+@media screen and (max-width:500px) {
+	.main-header 
+}
