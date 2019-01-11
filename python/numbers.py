@@ -17,4 +17,4 @@ print(round(3.55354, 2))
 print(floor(3.735))
 print(ceil(3.0001))
 print(sqrt(144))
-
+print(3**3)     # 3 powe 3

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA6-Compatible" content="ie=edge">
     <title>Google.com</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./google.css">
+    <!-- load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
     <div class="header1">
@@ -47,11 +49,21 @@
             <li>Gmail</li>
         </ul>
     </div>
+    <br>
     <div class="center-wrapper">
         <div class="centered-content">
             <div id="logo">Google</div>
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            <br>
+            <!-- the search bar-->
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Enter your search here..." name="search">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form> 
+            <br>           
+            <button> Google Search</button>
+            <button> I'm Feeling Lucky</button>
             <div>
                 <ul>
                     <li class="words" style="color: black">Google offered in:</li>
