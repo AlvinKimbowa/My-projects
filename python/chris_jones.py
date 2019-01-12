@@ -28,3 +28,4 @@ if __name__== '__main__':
     chris = Manager('Chris Jones', 50000)
     chris.giveRaise(.20)
     print(chris)
+
